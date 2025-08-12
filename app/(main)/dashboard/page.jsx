@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic"; // add this at the top of your file
 import { getUser } from "@/action/user";
 
 export default async function DashboardPage() {
