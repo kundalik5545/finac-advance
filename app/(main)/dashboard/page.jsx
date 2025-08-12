@@ -1,8 +1,7 @@
 import { getUser } from "@/action/user";
-import React from "react";
 
-const DashboardPage = async () => {
-  const user = await getUser(); // Assuming getUser is imported from action/user.js
+export default async function DashboardPage() {
+  const user = await getUser();
 
   return (
     <div>
@@ -10,6 +9,4 @@ const DashboardPage = async () => {
       <pre>{JSON.stringify(user, null, 2)}</pre>
     </div>
   );
-};
-
-export default DashboardPage;
+}
